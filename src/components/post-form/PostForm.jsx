@@ -54,6 +54,7 @@ function PostForm({ post }) {
         if (dbPost) navigate(`/post/${dbPost.$id}`);
       }
     } catch (error) {
+      console.log("error occured");
       throw error;
     }
   };
